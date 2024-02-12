@@ -1,44 +1,40 @@
 Filetype: IR signals file
 Version: 1
 # 
-name: POWER
+# CCTV: Northern NTH-LED24R
+#
+name: Power
+type: parsed
+protocol: NEC
+address: 00 00 00 00
+command: 02 00 00 00
+# 
+name: Video_Select
 type: parsed
 protocol: NEC
 address: 00 00 00 00
 command: 05 00 00 00
 # 
-name: Flame
+name: Left
 type: parsed
 protocol: NEC
 address: 00 00 00 00
-command: 47 00 00 00
+command: 08 00 00 00
 # 
-name: Heater
+name: Right
 type: parsed
 protocol: NEC
 address: 00 00 00 00
-command: 15 00 00 00
+command: 0A 00 00 00
 # 
-name: Timer
+name: Menu
 type: parsed
 protocol: NEC
 address: 00 00 00 00
-command: 18 00 00 00
+command: 09 00 00 00
 # 
-name: C_F
+name: Mode_Select
 type: parsed
 protocol: NEC
 address: 00 00 00 00
-command: 45 00 00 00
-# 
-name: Up
-type: parsed
-protocol: NEC
-address: 00 00 00 00
-command: 52 00 00 00
-# 
-name: Down
-type: parsed
-protocol: NEC
-address: 00 00 00 00
-command: 17 00 00 00
+command: 0D 00 00 00
